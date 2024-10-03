@@ -7,19 +7,20 @@ const counter = ref(0)
 function onClick() {
   counter.value++
 }
+function onReset() {
+  counter.value = 0;
+}
 </script>
 
 <template>
   <div id="app" class="app-container">
-    <CompositionButton :action="onClick">
-      Composition button
+    <CompositionButton :action="onClick" :disabled="counter === 10">
+      Composition button counter {{ counter }}
     </CompositionButton>
 
-    <SetupButton :action="onClick">
-      Setup button
+    <SetupButton :action="onReset" :disabled="counter === 0">
+      Setup button reset
     </SetupButton>
-
-    <p class="text-lg">{{ counter }}</p>
   </div>
 </template>
 
