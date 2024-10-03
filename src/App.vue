@@ -1,11 +1,11 @@
-<script setup>
+<script lang="ts" setup>
 import { ref } from 'vue';
 import { CompositionButton, SetupButton } from '@/components/TheButton';
 
-const counter = ref(0)
+const counter = ref(0);
 
 function onClick() {
-  counter.value++
+  counter.value++;
 }
 function onReset() {
   counter.value = 0;

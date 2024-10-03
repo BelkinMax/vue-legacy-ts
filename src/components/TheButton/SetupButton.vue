@@ -9,7 +9,7 @@ defineProps({
     required: false,
     default: false,
   },
-})
+});
 </script>
 
 <template>

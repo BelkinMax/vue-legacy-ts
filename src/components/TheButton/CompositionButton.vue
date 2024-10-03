@@ -13,7 +13,7 @@ export default defineComponent({
       default: false,
     },
   },
-})
+});
 </script>
 
 <template>
